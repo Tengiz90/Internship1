@@ -73,8 +73,9 @@ switch (operation)
                         {
                             haveNotEnteredDateWithCorrectFormat = false;
                             movie.ReleaseDate = releaseDate;
-                            if(!package.update_movie(movieId, movie))
+                            if (!package.update_movie(movieId, movie))
                                 Console.WriteLine("No movie with such id found");
+                            else Console.WriteLine("Movie info was updated");
                         }
                         else
                         {
